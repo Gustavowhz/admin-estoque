@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="images/piscinas da serra.png" alt="">
+                <br>
+                <h3>Admin</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <div class="header">
+                <h2>Produtos</h2>
+                <button class="add-btn">Adicionar novo Produto</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Imagem</th>
+                        <th>Nome</th>
+                        <th>Quantidade</th>
+                        <th>Marca</th>
+                        <th>ID</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="product-list">
+                </tbody>
+            </table>
+            <div id="add-product-form" class="hidden">
+                <h3>Adicionar Produto</h3>
+                <input type="text" id="new-name" placeholder="Nome do Produto" required>
+                <input type="number" id="new-quantity" placeholder="Quantidade" required>
+                <input type="text" id="new-brand" placeholder="Marca" required>
+                <input type="text" id="new-enrollNumber" placeholder="Número de Enrolamento" required>
+                <button id="save-new-product-btn">Salvar Produto</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
